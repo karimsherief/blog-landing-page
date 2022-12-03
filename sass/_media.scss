@@ -1,0 +1,172 @@
+@media (min-width:971px) {
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width:970px) {
+    .desktop {
+        display: none;
+    }
+
+    header {
+        padding: 20px;
+
+        .container {
+            nav {
+                opacity: 0;
+                transform: translateY(200px);
+                transition: .5s ease;
+                position: absolute;
+                flex-direction: column;
+                background-color: $White;
+                top: 180%;
+                width: 320px;
+                right: 0;
+                border-radius: 10px;
+                z-index: -1;
+
+                &>ul {
+                    padding: 20px;
+                    flex-direction: column;
+                    text-align: center;
+                    width: 80%;
+
+                    li {
+                        a {
+                            color: black;
+
+                            i {
+                                color: $lightRed;
+                            }
+                        }
+
+                        &:hover {
+                            a {
+                                text-decoration: none;
+
+                            }
+                        }
+
+                        &:last-child {
+                            ul {
+                                position: unset;
+                                background-color: #EFEFF1;
+                                margin-top: 15px;
+                                width: 100%;
+
+                                li {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .register {
+                    border-top: 1px solid #ddd;
+                    width: 80%;
+                    padding: 20px;
+
+                    ul {
+                        flex-direction: column;
+
+                        li {
+
+                            a {
+                                color: black;
+
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                            }
+
+                            &:last-child {
+                                background-image: linear-gradient(to right, $veryLightRedG, $lightRedG);
+
+                                a {
+                                    color: $White
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .burger-icon {
+                display: flex;
+
+
+            }
+        }
+    }
+
+    .landing {
+        background-image: linear-gradient(to bottom, $veryLightRedG, $lightRedG);
+
+        .container {
+            background-image: url('../images/bg-pattern-intro-mobile.svg');
+            background-position: -300px -200px;
+            background-size: 300%;
+
+            .content {
+
+                h1 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    .product {
+        h1 {
+            font-size: 35px;
+        }
+
+        .container {
+            flex-direction: column-reverse;
+            margin-top: 50px;
+            gap: 50px;
+
+            .content {
+                .info {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:300px) {
+    header {
+        .container {
+
+            nav {
+                width: 240px;
+            }
+        }
+    }
+
+    .landing {
+        .container {
+
+
+            .content {
+
+                h1 {
+                    font-size: 30px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+
+            .btns {
+                a {
+                    padding: 15px 10px;
+                }
+            }
+        }
+    }
+}

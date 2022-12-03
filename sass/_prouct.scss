@@ -1,0 +1,46 @@
+.product {
+    padding-top: 100px;
+    text-align: center;
+
+    h1 {
+        color: $veryDarBlue;
+        font-size: 40px;
+    }
+
+    .container {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+
+            .info {
+                text-align: left;
+                max-width: 510px;
+
+                h2 {
+                    color: $veryDarBlue;
+                    font-size: 30px;
+                }
+
+                p {
+                    color: $veryDarkGrayishBlue;
+                    font-size: $fontSize;
+                    margin-top: 20px;
+                    line-height: 2;
+                }
+            }
+        }
+
+        .image {
+
+            img {
+                width: 100%
+            }
+        }
+    }
+}
