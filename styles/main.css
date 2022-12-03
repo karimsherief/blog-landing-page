@@ -247,10 +247,32 @@ header .container .burger-icon.toggle span:last-child {
   width: 100%;
 }
 
-.company .container {
-  display: flex;
-  background-image: linear-gradient(to right, hsl(237deg, 17%, 21%), veryDarkDesaturatedBlue);
+.company {
+  background-image: linear-gradient(to right, hsl(237deg, 17%, 21%), hsl(237deg, 23%, 32%));
+  border-radius: 0 100px 0 100px;
 }
+.company .container {
+  background: url("../images/bg-pattern-circles.svg") -13.5rem -34rem no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 400px;
+}
+.company .container .content {
+  flex-basis: 665px;
+  line-height: 2;
+}
+.company .container .content h1 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 40px;
+}
+.company .container .content p {
+  color: hsl(240deg, 2%, 79%);
+  font-size: 16px;
+  line-height: 1.5;
+  width: 520px;
+}
+
 @media (min-width: 971px) {
   .mobile {
     display: none;
