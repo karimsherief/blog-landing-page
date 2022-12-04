@@ -211,7 +211,7 @@ header .container .burger-icon.toggle span:last-child {
 }
 
 .product {
-  padding-top: 100px;
+  padding: 100px 0 230px;
   text-align: center;
 }
 .product h1 {
@@ -249,28 +249,54 @@ header .container .burger-icon.toggle span:last-child {
 
 .company {
   background-image: linear-gradient(to right, hsl(237deg, 17%, 21%), hsl(237deg, 23%, 32%));
+  height: 60vh;
   border-radius: 0 100px 0 100px;
 }
 .company .container {
   background: url("../images/bg-pattern-circles.svg") -13.5rem -34rem no-repeat;
+  border-radius: 0 100px 0 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 400px;
+  height: 100%;
 }
 .company .container .content {
-  flex-basis: 665px;
-  line-height: 2;
+  padding: 20px;
 }
 .company .container .content h1 {
   color: hsl(0deg, 0%, 100%);
   font-size: 40px;
 }
 .company .container .content p {
+  margin-top: 20px;
   color: hsl(240deg, 2%, 79%);
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 2;
   width: 520px;
+}
+
+footer {
+  background-color: hsl(240deg, 10%, 16%);
+  border-top-right-radius: 100px;
+  padding: 100px;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  gap: 50px;
+}
+footer .container div h4 {
+  color: hsl(0deg, 0%, 100%);
+}
+footer .container div ul {
+  margin-top: 20px;
+}
+footer .container div ul li {
+  margin-top: 10px;
+  color: hsl(240deg, 2%, 79%);
+  cursor: pointer;
 }
 
 @media (min-width: 971px) {
@@ -365,6 +391,31 @@ header .container .burger-icon.toggle span:last-child {
     gap: 50px;
   }
   .product .container .content .info {
+    text-align: center;
+  }
+  .company {
+    height: 80vh;
+    background-image: linear-gradient(to bottom, hsl(237deg, 17%, 21%), hsl(237deg, 23%, 32%));
+  }
+  .company .container {
+    flex-direction: column;
+    text-align: center;
+    background-position: center -15rem;
+    background-size: 650px;
+    justify-content: unset;
+  }
+  .company .container .content p {
+    width: 100%;
+  }
+  .company .container .image {
+    height: 230px;
+  }
+  .company .container .image img {
+    width: 100%;
+    transform: translateY(-200px);
+  }
+  footer .container {
+    flex-direction: column;
     text-align: center;
   }
 }

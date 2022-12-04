@@ -135,6 +135,41 @@
             }
         }
     }
+
+    .company {
+        height: 80vh;
+        background-image: linear-gradient(to bottom, $veryDarkGrayBlue, $veryDarkDesaturatedBlue);
+
+        .container {
+            flex-direction: column;
+            text-align: center;
+            background-position: center -15rem;
+            background-size: 650px;
+            justify-content: unset;
+
+            .content {
+                p {
+                    width: 100%;
+                }
+            }
+
+            .image {
+                height: 230px;
+
+                img {
+                    width: 100%;
+                    transform: translateY(-200px);
+                }
+            }
+        }
+    }
+
+    footer {
+        .container {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
 }
 
 @media (max-width:300px) {

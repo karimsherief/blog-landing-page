@@ -1,17 +1,18 @@
 .company {
     background-image: linear-gradient(to right, $veryDarkGrayBlue, $veryDarkDesaturatedBlue);
+    height: 60vh;
     border-radius: 0 100px 0 100px;
-
+    
     .container {
         background: url('../images/bg-pattern-circles.svg') -13.5rem -34rem no-repeat;
+        border-radius: 0 100px 0 0;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        height: 400px;
+        height: 100%;
 
         .content {
-            flex-basis: 665px;
-            line-height: 2;
+            padding: 20px;
 
             h1 {
                 color: $White;
@@ -19,9 +20,10 @@
             }
 
             p {
+                margin-top: 20px;
                 color: $grayishBlue;
                 font-size: $fontSize;
-                line-height: 1.5;
+                line-height: 2;
                 width: 520px;
             }
         }

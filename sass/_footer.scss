@@ -1,0 +1,33 @@
+footer {
+    background-color: $veryDarkBlackBlue;
+    border-top-right-radius: 100px;
+    padding: 100px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        gap: 50px;
+
+        .logo {
+            img {}
+        }
+
+        div {
+            h4 {
+                color: $White
+            }
+
+            ul {
+                margin-top: 20px;
+
+                li {
+                    margin-top: 10px;
+                    color: $grayishBlue;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
